@@ -4,19 +4,24 @@ corinne = Employee.new(name: 'Corinne Henk', email: 'corinne.m.henk@gmail.com', 
 puts corinne.salary
 puts corinne.name
 
-labs = Department.new(name: 'Ai Labs')
-puts labs.name
+# labs = Department.new(name: 'Ai Labs')
+# puts labs.name
+#
+# labs.add_employee(corinne)
+#
+# p labs.list_employees
+#
+# corinne.write_review("Corinne laughs a lot.")
+# puts corinne.get_review
+#
+# corinne.assign_department('Ai Labs')
+# puts corinne.get_department
 
-labs.add_employee(corinne)
-
-p labs.list_employees
-
-corinne.write_review("Corinne laughs a lot.")
-puts corinne.get_review
-
-corinne.assign_department('Ai Labs')
-puts corinne.get_department
 
 # Issue: want to restrict who you can add to a department
 # Must be of 'Employee' class
-labs.add_employee('nick')
+# labs.add_employee('nick')
+
+# May be solved with accessor methods?
+# getters and setters are sometimes called
+# accessor and mutator methods, respectively
