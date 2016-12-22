@@ -1,22 +1,19 @@
 require './employee.rb'
-
+#paul
 class Department
+  attr_reader :name, :employees
 
   def initialize(name:)
     @name = name
     @employees = []
   end
 
-  def name
-    @name
-  end
-
   def add_employee(e)
     @employees << e
   end
 
-  def list_employees
-    @employees
+  def to_s
+    to_s
   end
 
 end

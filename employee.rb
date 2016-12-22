@@ -1,5 +1,6 @@
 class Employee
-  attr_reader :name, :email, :phone, :salary
+  attr_reader :name, :email, :phone, :salary, :department, :review, :pass
+
   def initialize(name:, email:, phone:, salary:)
     @name = name
     @email = email
@@ -7,35 +8,17 @@ class Employee
     @salary = salary
   end
 
-  def name
-    @name
-  end
-
-  def email
-    @email
-  end
-
-  def phone
-    @phone
-  end
-
-  def salary
-    @salary
-  end
-
-  def write_review(a)
-    @review = a
-  end
-
-  def get_review
-    @review
-  end
-
   def assign_department(a)
     @department = a
   end
 
-  def get_department
-    @department
+  def write_review(text)
+    @review = text
   end
+
+  def set_pass(a)
+    @pass = a
+  end
+
+
 end

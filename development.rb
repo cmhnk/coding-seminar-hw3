@@ -1,27 +1,21 @@
 require './department.rb'
 
+labs = Department.new(name: 'Ai Labs')
+
 corinne = Employee.new(name: 'Corinne Henk', email: 'corinne.m.henk@gmail.com', phone: 8602371500, salary: 10000000)
-puts corinne.salary
-puts corinne.name
-
-# labs = Department.new(name: 'Ai Labs')
-# puts labs.name
-#
-# labs.add_employee(corinne)
-#
-# p labs.list_employees
-#
-# corinne.write_review("Corinne laughs a lot.")
-# puts corinne.get_review
-#
-# corinne.assign_department('Ai Labs')
-# puts corinne.get_department
+coop = Employee.new(name: 'Zack Cooper', email: 'zack@automated.insights.com', phone: 'XXX', salary: 200000)
 
 
-# Issue: want to restrict who you can add to a department
-# Must be of 'Employee' class
-# labs.add_employee('nick')
+corinne.write_review('Corinne\'s pretty good at her job.')
+corinne.set_pass('Yes')
 
-# May be solved with accessor methods?
-# getters and setters are sometimes called
-# accessor and mutator methods, respectively
+# puts corinne.name
+# puts corinne.review
+puts corinne.pass
+
+
+
+labs.add_employee(corinne)
+labs.add_employee(coop)
+
+puts labs.employees.to_s
