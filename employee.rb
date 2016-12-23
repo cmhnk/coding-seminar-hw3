@@ -20,5 +20,9 @@ class Employee
     @pass = a
   end
 
+  def adjust_salary_dollars(d)
+    @salary = @salary + d
+  end
+
 
 end
