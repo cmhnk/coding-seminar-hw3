@@ -15,5 +15,4 @@ class Employee
   def to_s
     to_s
   end
-
 end

@@ -10,15 +10,13 @@ class Department
     @employees << e
   end
 
-
-    def total_salary
-      salaries = []
-      @employees.each do |employee|
-        salaries << employee.salary
-      end
-      salaries.inject(0, :+)
+  def total_salary
+    salaries = []
+    @employees.each do |employee|
+      salaries << employee.salary
     end
-
+    salaries.inject(0, :+)
+  end
 
   def adjust_salary_dollars(d)
     @employees.each do |employee|
@@ -29,5 +27,4 @@ class Department
   def to_s
     to_s
   end
-
 end
